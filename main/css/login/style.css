@@ -1,0 +1,73 @@
+body {
+    background-color: #1D63ED;
+    margin: 0 auto;
+    height: 100%;
+    min-height: auto
+}
+
+header {
+    background-color: #17191E;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    height: 100%;
+}
+
+.dockerImage {
+    margin: 0 auto;
+    width: 20%;
+    padding: 5%;
+}
+
+.login {
+    padding-top: 1%;
+    background-color: #17191E;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+hr {
+    clear: both;
+    visibility: hidden;
+    padding: 15px;
+}
+
+input {
+    border-radius: 7px;
+    height: 30px;
+    width: 200px;
+    border: 0px solid #17191E;
+    background-color: #bec7ce;
+    transition: background-color 0.3s ease-in-out;
+    outline: none;
+}
+
+input:focus, input:hover {
+    background-color: white;
+}
+
+footer {
+    background-color: #17191E;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+

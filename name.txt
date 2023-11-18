@@ -1,0 +1,14 @@
+pedi-SECA waitress in latin
+ARCA - container
+
+container(arca) waitress(seca)
+
+
+
+
+
+
+LOGIN
+    DASHBOARD
+    CONTAINER LIST
+    SETTINGS
