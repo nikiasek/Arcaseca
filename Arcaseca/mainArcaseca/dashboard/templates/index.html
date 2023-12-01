@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    čau
+    {% if user.is_authenticated %}
+    <h1>Ahoj</h1>
+    {% else %}
+    <h1>idiot</h1>
+    {% endif %}
 </body>
 </html>
