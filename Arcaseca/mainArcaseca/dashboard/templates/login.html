@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcaseca</title>
-    <link rel="stylesheet" href="{% static 'login/style.css' %}">
+    <link rel="stylesheet" href="{% static 'login/style/style.css' %}">
+    <script type="module" src="{% static "login/javascript/login.js" %}"></script>
 </head>
 <body>
     <header>
         <h1>ARCASECA</h1>
     </header>
     <div class="main">
-        <img class="dockerImage" src="{% static 'login/assets/dockerOffBlack.png' %}">
+        <img class="dockerImage" src="{% static "login/assets/docker.png" %}">
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            This is an alert box.
+        </div> 
         <div class="login">
             <h1 style="margin-top: 10px">
                 Sign in
@@ -20,6 +25,13 @@
             <h6 style="margin-top: 10px">
                 If you don't have access, call an administrator 
             </h6>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
             <form method="POST" action="{% url "login"%}">
                 {% csrf_token %}
                 <label for="username">username</label><br><br>
@@ -29,13 +41,13 @@
                 <input type="password" id="password" name="password" placeholder="SuperCoolPass1">
                 <hr>
                 <input type="submit" id="submit" value="submit">
-            </form> 
+            </form>
         </div>
     </div>
     <footer>
-        <h1>
-            ARCASECA
-        </h1>
+        <h7>
+            @copyright asi
+        </h7>
     </footer>
 </body>
 </html>
