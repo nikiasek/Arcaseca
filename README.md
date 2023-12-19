@@ -67,4 +67,5 @@ Lightweight game server management panel.
 
 ## Production
 - Its not open-source.
+- Ini files for config.
 
